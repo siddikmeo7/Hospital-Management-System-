@@ -75,10 +75,3 @@ class Appointment(models.Model):
     def __str__(self):
         return f"Appointment: {self.client.username} with {self.doctor.username} on {self.timetable.date} at {self.timetable.time}"
 
-
-# Role Model (for defining user roles)
-class Role(models.Model):
-    title = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.title
